@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application structure
+- Keep the requested dashboard at the index route and its reference data in a browser-safe module; this single-screen reproduction does not require server persistence.
+- Define dashboard visual styles and semantic colors in the global stylesheet and interactive variants in the shared Button; this keeps the reference layout consistent across screen sizes.
